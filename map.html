@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information| Pan-African Cultural Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Pan-African Cultural Experience</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proverbs.html">Proverbs</a></li>
+                <li><a href="map.html" class="active">Country Information</a></li>
+                <li><a href="quiz.html">Quiz Game</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="map-section">
+        <div class="container">
+            <h2>Important Information of African Countries</h2>
+            <p class="intro-text">Click on any country to learn about its culture, languages, traditional dress, cuisine, and notable figures.</p>
+
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <div id="country-list">
+                        <!-- Country list will be dynamically generated here -->
+                    </div>
+                </div>
+
+                <div id="country-info" class="country-info">
+                    <div class="country-info-default">
+                        <h3>Select a Country</h3>
+                        <p>Click on any country to view information about its culture and traditions.</p>
+                    </div>
+                    <div id="country-info-content" style="display: none;">
+                        <h3 id="country-name"></h3>
+                        <div class="country-flag-container">
+                            <img id="country-flag" src="/placeholder.svg" alt="Country flag">
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <h4>Capital</h4>
+                                <p id="country-capital"></p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Languages</h4>
+                                <p id="country-languages"></p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Traditional Dress</h4>
+                                <p id="country-dress"></p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Cuisine</h4>
+                                <p id="country-cuisine"></p>
+                            </div>
+                        </div>
+                        <div class="notable-figure">
+                            <h4>Notable Figure</h4>
+                            <div class="figure-content">
+                                <div class="figure-image">
+                                    <img id="figure-img" src="/placeholder.svg" alt="Notable figure">
+                                </div>
+                                <div class="figure-info">
+                                    <h5 id="figure-name"></h5>
+                                    <p id="figure-description"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Pan-African Cultural Experience.</p>
+    </div>
+</footer>
+
+<script src="js/map.js"></script>
+</body>
+</html>

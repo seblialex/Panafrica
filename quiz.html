@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game | Pan-African Cultural Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Pan-African Cultural Experience</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proverbs.html">Proverbs</a></li>
+                <li><a href="map.html">Country Information</a></li>
+                <li><a href="quiz.html" class="active">Quiz Game</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="quiz-section">
+        <div class="container">
+            <h2>Pan-African Quiz Game</h2>
+            <p class="intro-text">Test your knowledge about African countries, history, culture, and more. Select a category to begin!</p>
+
+            <div id="quiz-container" class="quiz-container">
+                <!-- Start Screen -->
+                <div id="start-screen" class="quiz-screen">
+                    <h3>Choose a Category</h3>
+                    <div class="category-grid">
+                        <button class="category-btn" data-category="geography">
+                            <div class="category-icon geography-icon"></div>
+                            <span>Geography</span>
+                        </button>
+                        <button class="category-btn" data-category="history">
+                            <div class="category-icon history-icon"></div>
+                            <span>History</span>
+                        </button>
+                        <button class="category-btn" data-category="culture">
+                            <div class="category-icon culture-icon"></div>
+                            <span>Culture</span>
+                        </button>
+                        <button class="category-btn" data-category="flags">
+                            <div class="category-icon flags-icon"></div>
+                            <span>Flags</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question Screen -->
+                <div id="question-screen" class="quiz-screen" style=" display: none;">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">
+                            <div id="progress-bar" class="progress-bar">
+                                <div id="progress-fill" class="progress-fill"></div>
+                            </div>
+                            <div id="question-counter" class="question-counter">Question 1/10</div>
+                        </div>
+                        <div id="quiz-score" class="quiz-score">Score: 0</div>
+                    </div>
+
+                    <div id="question-container" class="question-container">
+                        <h3 id="question-text">Question text goes here?</h3>
+                        <div id="flag-image-container" class="flag-image-container" style="display: none;">
+                            <img id="flag-image" src="/placeholder.svg" alt="Flag">
+                        </div>
+                        <div id="options-container" class="options-container">
+                            <!-- Options will be added dynamically -->
+                        </div>
+                    </div>
+
+                    <div id="feedback-container" class="feedback-container" style="display: none;">
+                        <div id="feedback-message" class="feedback-message"></div>
+                        <button id="next-btn" class="btn primary">Next Question</button>
+                    </div>
+                </div>
+
+                <!-- Results Screen -->
+                <div id="results-screen" class="quiz-screen" style="display: none;">
+                    <h3>Quiz Results</h3>
+                    <div id="results-score" class="results-score">
+                        <div id="score-circle">
+                            <span id="final-score">0</span>
+                            <span id="total-questions">/10</span>
+                        </div>
+                    </div>
+                    <p id="results-message">Thanks for playing!</p>
+                    <div class="results-actions">
+                        <button id="play-again-btn" class="btn primary">Play Again</button>
+                        <button id="change-category-btn" class="btn secondary">Change Category</button>
+                    </div>
+
+                    <div id="high-scores" class="high-scores">
+                        <h4>Your High Scores</h4>
+                        <div id="high-scores-list" class="high-scores-list">
+                            <!-- High scores will be added dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Pan-African Cultural Experience.</p>
+    </div>
+</footer>
+
+<script src="js/quiz-data.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

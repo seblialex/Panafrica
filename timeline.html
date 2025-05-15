@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline | Pan-African Cultural Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Pan-African Cultural Experience</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proverbs.html">Proverbs</a></li>
+                <li><a href="map.html">Country Information</a></li>
+                <li><a href="quiz.html">Quiz Game</a></li>
+                <li><a href="timeline.html" class="active">Timeline</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="timeline-section">
+        <div class="container">
+            <h2>Timeline of Pan-African History</h2>
+            <p class="intro-text">Explore key events in Pan-African history and movements that have shaped the continent and its diaspora.</p>
+
+            <div class="timeline-filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="ancient">Ancient History</button>
+                <button class="filter-btn" data-filter="colonial">Colonial Era</button>
+                <button class="filter-btn" data-filter="independence">Independence</button>
+                <button class="filter-btn" data-filter="modern">Modern Era</button>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Timeline events will be added dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Pan-African Cultural Experience.</p>
+    </div>
+</footer>
+
+<script src="js/timeline-data.js"></script>
+<script src="js/timeline.js"></script>
+</body>
+</html>

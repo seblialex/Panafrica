@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Pan-African Cultural Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Pan-African Cultural Experience</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proverbs.html">Proverbs</a></li>
+                <li><a href="map.html">Country Information</a></li>
+                <li><a href="quiz.html">Quiz Game</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="gallery-section">
+        <div class="container">
+            <h2>Gallery of African Culture</h2>
+            <p class="intro-text">Explore the rich cultural heritage of Africa through traditional clothing, festivals, instruments, and more.</p>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="clothing">Clothing</button>
+                <button class="filter-btn" data-filter="festivals">Festivals</button>
+                <button class="filter-btn" data-filter="instruments">Instruments</button>
+                <button class="filter-btn" data-filter="art">Art</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery items will be added dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image-container">
+                <img id="modal-image" src="/placeholder.svg" alt="">
+            </div>
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-region"></p>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Pan-African Cultural Experience.</p>
+    </div>
+</footer>
+
+<script src="js/gallery-data.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
