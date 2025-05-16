@@ -46,7 +46,24 @@ document.addEventListener("DOMContentLoaded", () => {
     // Call on resize
     window.addEventListener("resize", createMobileNav)
 
-    // Smooth scroll for anchor links
+
+
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        // Change opacity based on scroll position
+        if (scrollY > 50) {
+            header.style.opacity = '0.7';  // less opaque after scrolling 50px
+        } else {
+            header.style.opacity = '1';    // full opacity when near top
+        }
+    });
+
+
+
+// Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault()

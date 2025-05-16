@@ -4,9 +4,10 @@
     color: var(--light-color);
     padding: 80px 0;
     text-align: center;
-    background-image: url("../images/background/back1.jpg");
-    background-size: cover;
+    background-image: url("../images/background/back3.jpg");
+    background-size: contain;
     background-blend-mode: overlay;
+
 }
 
 .hero h2 {
